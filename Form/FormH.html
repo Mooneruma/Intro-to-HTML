@@ -1,0 +1,209 @@
+
+<html>
+<head>
+
+  <!--
+    Tutorial 9, Case 2
+    Your Name: Kyle Moon
+    Today's Date: 8/1/16
+
+  -->
+
+<script src="modernizr-2.js"></script>
+<title>Onloin Meats and Poultry Order Form</title>
+
+
+<style type="text/css">
+
+	form{
+		margin: 1em;
+		padding: 0.5em;
+		background-color: #c9c3b5;
+		font-size: 16px;
+	}	
+ 
+	.form{
+		margin: 0;
+		padding: 0.5em;
+		clear: both;
+	}
+	
+	label{
+		width: 180px:
+		margin-top: 0 15px 0 4px;
+		color: black;
+		float: left;
+		text-align:right;
+	}
+	
+	legend{
+		padding: 0 10px;
+		color: #354660;
+		font-weight: bold;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	fieldset{
+		width: 80%;
+		margin: 1em;
+		border: solid 5px #354660;
+		padding: 0.5em;
+		background-color: #e9edda;
+		text-align:left;
+		}
+	
+	input.button{
+		margin: 5em;
+		border: solid thin black;
+		text-align:center;
+		color: black;
+		background-color: yellow;
+		font-weight: bold;
+		display: inline;
+	}
+	
+	clearfloat{
+		clear: both;
+	}
+	
+	input{
+		display: inline;
+	}
+	
+	Header{
+		background-color:black;
+		color: white;
+		text-align: center;
+		font-size: 3em;
+	}
+	
+
+</style>
+</head>
+
+<body>
+<header>Moons Fill out Form</header>
+<section id="container">
+<!-- end info -->
+
+<section id="order">
+
+<form method="post" action="formHandler.php">
+
+<p>Password (optional). By providing a password, you will be offered discounts on future purchases.</p>
+
+<fieldset><legend>Passwords</legend>
+
+<!-- password fields are below -->
+
+
+		<label for="Password">Password</label>
+	    <input type="text" name="password" id="password" class="text"><p>
+		<br>
+		<label for="confirm email">Confirm Password</label>
+        <input type="text" name="confirm password" id="confirm password" class="text"><p>
+
+</fieldset> <!-- end passwords -->
+
+
+<fieldset>
+
+<!-- first checkbox is below -->
+
+	<label for = "check address">Check if billing and shipping
+	address are the same</label>
+
+	<input type = "checkbox" name = "confirm" id = "checked" value = "confirm">
+	<p>
+	
+</fieldset> 
+
+  
+  <fieldset><legend>Title</legend>
+
+<!-- selection list is below -->
+    
+	<select name = "Title">
+	<option>(no title)</option>
+	<option>Mr.</option>
+	<option>Mrs.</option>
+	<option>Ms.</option>
+	</select>
+	
+	
+  </fieldset>
+
+
+
+
+<fieldset><legend>Personal Information</legend>
+
+
+
+<!-- text boxes are below -->
+
+	
+	<label for="Password">First Name</label>
+	
+			<input type="text" name="First Name" id="First Name" class="text"></p>
+			
+	<label for="Password">Last Name</label>
+	
+			<input type="text" name="Last Name" id="Last Name" class="text"></p>		
+			
+	<label for="Password">Phone</label>
+	
+			<input type="text" name="Phone" id="Phone" class="text"></p>
+			
+	<label for="Password">Address Line 1</label>
+	
+			<input type="text" name=">Address Line 1" id=">Address Line 1" class="text"></p>
+
+	<label for="Password">Address Line 2</label>
+	
+			<input type="text" name="Address Line 2" id="Address Line 2" class="text"></p>
+
+	<label for="Password">City</label>
+	
+			<input type="text" name="City" id="City" class="text"></p>
+
+	<label for="Password">State</label>
+	
+			<input type="text" name="State" id="State" class="text"></p>
+
+	<label for="Password">Zip Code</label>
+	
+			<input type="text" name="Zip Code" id="Zip Code" class="text"></p>
+
+	<label for="Password">Email</label>
+	
+			<input type="text" name="Email" id="Email" class="text"></p>		
+
+
+</fieldset>
+
+<!-- second checkbox is below -->
+	<label for="Check box">I would like to recive special offers via email</label>
+	
+	<input type="checkbox" name="confirm" id="checked" action="checked" value="confirm"></p>
+
+
+<!-- input buttons are below -->
+
+	<input type="submit" value="Send Information" class="button"/>	
+	<input type="reset" value="Cancel" class="button"/>
+
+
+</form>
+
+</section> <!-- end order -->
+
+<footer>
+
+</footer> <!-- end footer -->
+
+</section> <!-- end container -->
+
+</body>
+</html>

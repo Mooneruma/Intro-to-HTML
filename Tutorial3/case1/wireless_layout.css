@@ -1,0 +1,23 @@
+/*
+	Kyle Moon
+	6/21/2016
+*/
+
+body{
+	font-size: 1.2em;
+	font-style: arial;
+	background-color: #e6e6fa;
+}
+	
+em{
+		color: green;
+		font-weight: bold;
+	}
+	
+h3{
+	color: maroon;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 1.3em;
+	font-family: "Times New Roman", Georgia, Serif;
+}	

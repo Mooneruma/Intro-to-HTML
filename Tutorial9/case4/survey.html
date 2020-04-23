@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!--
+    Tutorial 9, Case 4
+    Your Name:	Kyle Moon
+    Today's Date: 8/1/16
+
+  -->
+
+<script src="modernizr-2.js"></script><legend>LaFleur Caterers</legend>
+<legend></legend>
+
+<style type="text/css">
+
+body{
+	  background-color: #AA3939;
+}
+
+* { 
+  margin: 0; 
+  padding: 0;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  border-width: 1px;
+}
+
+form {
+  margin-top: 1em;
+  border: solid 2px navy;
+  padding: 1em;
+  font-size: 16px;
+}
+
+fieldset{
+	 background-color: #AA8439;
+}
+label {
+  width: 150px;
+  margin-right: 15px;
+  color: black;
+  float: left;
+  text-align: right;
+}
+
+img { 
+   display: block;
+   margin: 0 auto;
+}
+
+input {
+	display: block;
+}
+
+input.button {
+	margin-top: 2.5em;
+	color:black;
+	background-color: yellow;
+	border: solid thick black;
+	display: inline;
+	}
+legend{
+	font-size:	1.5em;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section id="container">
+
+<p><img src="images/surveylogo.gif" alt="survey logo image" width="600" height="100" /></p>
+
+<form id="survey" name="survey" method="post" action="formEmailer.php">
+
+<!-- enter your forms code below -->
+	<fieldset>
+		<legend><b>Age Selection</b></legend>
+		<select name = "Ages">
+		<option>(default)</option>
+		<option>16-24</option>
+		<option>24-45</option>
+		<option>45- or older</option>
+		</select>
+	
+	
+  </fieldset>
+
+<fieldset>
+<legend><b>Student Survey</b></legend>
+
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email" size="40" maxlength="40"></input><br>
+
+	<label for="password">Password</label>
+	<input type="password" name="password" id="password" size="10" maxlength="10"></input><br>
+	<label for="password2">Confirm Password</label>
+	<input type="password" name="password2" id="password2" size="10" maxlength="10"></input><br>
+
+	<label for = "parking">Parking Issues</label>
+	<input type = "text" name = "parking" id = "parking" size= "20" maxlength = "20" ></input><br>
+	
+	<label for = "Regis">Registration Issues</label>
+	<input type = "text" name = "Regis" id = "Regis" size= "20" maxlength = "20" ></input><br>
+	
+	<label for = "satis">Course Satisfaction</label>
+	<input type = "text" name = "satis" id = "satis" size= "20" maxlength = "20" ></input>
+	
+
+	</fieldset>
+
+<fieldset>
+
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+
+  </fieldset>
+	
+	<fieldset>
+
+		<label for="checkbox">Sign up for the Campus Daily newspaper</label>
+		<input type="checkbox" name="checkbox" id="checkbox" value="Signup" checked="checked"</input>
+
+	</fieldset>
+
+	<fieldset>
+		<input type="submit" value="Submit" class="button"/>
+		<input type="reset" value="Reset" class="button"/>
+	</fieldset>
+
+	
+</form>
+
+</section> <!-- end container -->
+
+</body>
+</html>

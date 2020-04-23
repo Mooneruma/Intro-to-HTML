@@ -1,0 +1,30 @@
+	body{
+		background-color: gray;
+	}
+
+	p{
+		background-color: black;
+		color: red;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	quote{
+		font-style: italic;
+		margin-right: 20em;
+		margin-left: 20em;
+		border-bottom-style: solid;
+	}
+	
+	h2{
+		text-align: left;
+		padding: 0.5em;
+	}
+	
+	img{
+	float: right;
+	float: clear;
+	}
+	h4{
+		text-align: center;
+	}
