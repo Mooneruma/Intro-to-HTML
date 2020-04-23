@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+
+	<head>
+	<meta charset="utf-8">
+	<!-- head does not display-->
+		<title>home</title>
+		<meta name = "Contact" content = "A page where you can express how you
+		feel on events or employees for zanzibars cafe">
+	</head>
+	
+	<style>
+	
+	*{	
+		margin: auto;
+		padding: 0;
+	}
+	
+	header{
+		padding-top: 1em;
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		font-family: cursive;
+	}
+	
+	body{
+		background-image: url("images/seananners-woodcut.png");
+		background-repeat: repeat;
+		text-align: center;
+	}
+
+	#sidebar{
+		border-style: solid;
+		border-color: brown;
+		<!-- margin-top: 0.2em; -->
+	<!-- padding-top: 2.5em; -->
+		text-align: center;
+		background-color: white;
+		float: left;
+		width: 250px;
+		height: 250px
+
+	}
+	
+		#sidebarOpen{
+<!-- 		border-style: solid;
+		border-color: white; -->
+<!-- 		margin-top: 0.2em;
+		padding-top: 0.5em; -->
+		text-align: left;
+		<!-- background-color: red; -->
+		float: left;
+		width: 200px;
+	}
+	
+	main{
+		background-color: #C2AD75;
+	}
+
+	#main{
+		border-style: solid;
+		border-color: black;
+		margin: 0.5em;
+		text-align: center;
+		width: 70%;
+		float: right;
+		padding-top: 2em;
+		background-color: #C2AD75;
+
+	}
+	
+	#headText{
+		text-align: center;
+		color: green;
+	}
+	
+	#wrapper{
+		margin: auto;
+		background-color:  #ffffe0;
+		width: 1000px;
+		padding-bottom: 150px;
+	}
+	
+	footer{
+		width: 1000px;
+		background-color: black;
+		color: white;
+		padding-top: 25px;
+		text-align: left;
+		text-indent: 50px;
+		padding-bottom: 10px;
+		
+	}
+	
+	#clearfloat{
+		clear:both;	
+	}
+	
+	Big{
+		font-size: 2em;
+	}
+	
+	#sign{
+		float: right;
+		background-color: black;
+	}
+	
+	#labelR{
+		float: left;
+		background-color: black;
+	}
+	
+	<!-- Nav bar begins -->
+	nav{
+		width: 1000px;
+		word-spacing: 30px;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+
+	li a:hover {
+		background-color: #111;
+	}
+
+	.active {
+		background-color: #4CAF50;
+	}
+	<!-- nav bar css ends -->
+	
+	<!-- Form Start  -->
+	
+	
+	#container {
+		width: 80%;
+		margin: 0 auto;
+		border-width: 1px;
+	}
+
+	form {
+		margin-top: 1em;
+		border: solid 2px navy;
+		padding: 1em;
+		font-size: 16px;
+	}
+
+	fieldset{
+		background-color: #AA8439;
+	}
+	
+	label {
+		width: 150px;
+		margin-right: 15px;
+		color: black;
+		float: left;
+		text-align: right;
+	}
+
+	img { 
+		display: block;
+		margin: 0 auto;
+	}
+
+	input {
+		display: block;
+	}
+
+	input.button {
+		margin-top: 2.5em;
+		color:black;
+		background-color: yellow;
+		border: solid thick black;
+		display: inline;
+	}
+	legend{
+		font-size:	1.5em;
+		background-color: black;
+		color: white;
+
+	}
+	select{
+		margin: 1em;
+	}
+	
+	<!-- form end -->
+	</style>
+	
+<div id = "wrapper">
+	<body>
+	
+	<header>
+		<h1>Zanzibars</h1>	
+		<a name="#top">&nbsp;</a>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Menu.html">Menu</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Music.html">Live_Music</a></li>
+			<li><a href="about.html">Location</a></li>
+		</ul>
+		<br>
+	</nav>
+	
+	<content id = "sidebar">
+		<img src="images/coffee_logo.jpg" alt="Coffee Logo" style="width:250px;height:250px;">
+	</content>
+		
+	<content id = "main">
+		<h1><b><u>Contact Form</h1></b></u>
+		<section id="container">
+
+	<form id="survey" name="survey" method="post" action="formEmailer.php">
+
+		<!-- enter your forms code below -->
+	<fieldset>
+		<legend><b>Your State</b></legend><br>
+		<select name = "State">
+		<option>(none selected)</option>
+		<option></option>
+		<option>IA</option>
+		<option>MN</option>
+		<option>NE</option>
+		<option>SD</option>
+		</select>
+	
+	
+  </fieldset>
+
+	<fieldset>
+	<legend><b>Member?</b></legend><br>
+
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email" size="40" maxlength="40"></input><br>
+
+	<label for="password">Password</label>
+	<input type="password" name="password" id="password" size="10" maxlength="10"></input><br>
+	<label for="password2">Confirm Password</label>
+	<input type="password" name="password2" id="password2" size="10" maxlength="10"></input><br>
+	</fieldset>
+
+	<fieldset>
+	
+	<legend><b>Personal Info</b></legend><br>
+	
+	<label for = "Fname">First Name</label>
+	<input type = "text" name = "Fname" id = "Fname" size= "20" maxlength = "20" ></input><br>
+	
+	<label for = "Lname">Last Name</label>
+	<input type = "text" name = "Lname" id = "Lname" size= "20" maxlength = "20" ></input><br>
+	
+	<label for = "Age">Your age</label>
+	<input type = "text" name = "Age" id = "Age" size= "20" maxlength = "20" ></input><br>
+	
+	
+	<label for = "Age">address</label>
+	<input type = "text" name = "address" id = "address" size= "20" maxlength = "20" ></input><br>
+	
+	<label for = "Age">City</label>
+	<input type = "text" name = "City" id = "City" size= "20" maxlength = "20" ></input><br>
+
+	<label for = "Age">Zip</label>
+	<input type = "text" name = "Zip" id = "Zip" size= "20" maxlength = "20" ></input><br>
+
+	<label for = "Age">Phone</label>
+	<input type = "text" name = "Phone" id = "Phone" size= "20" maxlength = "20" ></input><br>
+
+	
+	</fieldset>
+
+	<fieldset>
+	<legend><b>Purpose of Request</b></legend><br>
+	Suggestion<input type="radio" name="Purpose" value="Suggestion"> 
+	Complaint<input type="radio" name="Purpose" value="Complaint"> 
+	Compliment<input type="radio" name="Purpose" value="Compliment">
+	Other<input type="radio" name="Purpose" value="other" checked>
+	
+  </fieldset>
+	
+	<fieldset>
+	
+	<legend><b>Who does your comment apply to</b></legend><br>	
+	<input type="checkbox" class = "radio" name="ApplyTo" value="other" checked> other<br>
+	<input type="checkbox" class = "radio" name="ApplyTo" value="Customers"> Customers<br>
+	<input type="checkbox" class = "radio" name="ApplyTo" value="employee"> employee<br>
+	<input type="checkbox" class = "radio" name="ApplyTo" value="managment"> managment<br>
+	
+	</fieldset>
+
+	<fieldset>	
+	
+		<legend><b>Post Your Comment Here</b></legend><br>
+	
+		<input type = "text" name = "Comment" id = "Comment" size= "20" maxlength = "250" style="width:500px;"> </input><br>
+	
+	</fieldset>
+	
+	<fieldset>
+		<input type="submit" value="Submit" class="button"/>
+		<input type="reset" value="Reset" class="button"/>
+	</fieldset>
+
+	
+	</form>
+
+	</section>
+		<a href="#top">Back to top</a>
+</content>
+		
+	
+	<content id = "sidebarOpen">
+		
+		<b>
+		<address>
+			Zanzibars Coffee House<br>
+			604 24th Street<br>
+			St. Paul, Minnesota<br>
+			702-971-1154<br>
+			<a href ="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fkmoonpage.com%2Fhomework%2FProject%2Findex.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">Validator Link</a>
+		</address>
+		</b>
+		
+		<img src="images/Minneapolis.jpg" alt="Minneapolis" style="width:250px;height:750px;">
+	</content>
+		
+	<div class = "clearfloat"></div>	
+	
+	</body>
+	
+</div>
+
+	<footer>
+		
+		<content id = "sign">
+			<b>Designed and Coded By Kyle Moon</b><br>
+			<b>Thank you for viewing!</b>
+		</content>
+		
+		
+		<content id = "labelR">
+		Zazibars Coffee house<br>
+		Designed for edjucational purposes
+		</content>
+		<div class = "clearfloat"></div>	
+	<br>
+	<br>
+	</footer>
+
+</html>
